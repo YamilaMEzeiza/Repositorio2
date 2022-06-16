@@ -1,0 +1,31 @@
+INICIO DESKTOP
+https://wireframe.cc/pro/pp/0a74b4067552394
+
+INICIO MOBILE
+
+https://wireframe.cc/pro/pp/76f2e9856552399
+
+RESEÑA DESKTOP
+https://wireframe.cc/pro/pp/a4dcdcf07552400
+
+RESEÑA MOBILE
+https://wireframe.cc/pro/pp/89ca3fe81552402
+
+CATÁLOGO DE LIBROS DESKTOP
+
+https://wireframe.cc/pro/pp/14e9910c1552403
+
+CATÁLOGO DE LIBROS MOBILE
+https://wireframe.cc/pro/pp/c42da2165552404
+
+NOVEDADES
+https://wireframe.cc/pro/pp/455ff9cb5552407
+
+NOVEDADES MOBILE
+https://wireframe.cc/pro/pp/88e709a64552408
+
+CONTACTO
+https://wireframe.cc/pro/pp/95e45d127552410
+
+CONTACTO MOBILE
+https://wireframe.cc/pro/pp/946e7f598552414

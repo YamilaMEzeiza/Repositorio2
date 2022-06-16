@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Rancho&family=Uncial+Antiqua&display=swap');
+html {
+ font-size: 62.5%
+}
+  body{
+	background-image: url(img/fondo.jpg); 
+	background-attachment: fixed; 
+	}
+	/*inicia grids*/
+#grilla{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas:
+	 "header header header"
+	 "articulo articulo aside"
+	 "articulo2 articulo2 articulo2"
+	 "footer footer footer" ;
+}
+
+	/*inicia header*/
+
+#mainHeader
+{
+	background-color: #540404 ;
+	width:90%;
+	padding: 5px;																																																																																																												0px;
+	border: double orange 15px ;
+	grid-area: header;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoimg{
+		width: 50%;
+				
+	}
+nav ul
+{
+	display: flex;
+	margin: 0 10px;
+}
+nav ul li{
+	margin: 0 10px;
+	justify-content: center;
+    align-content: space-around;
+}
+nav ul li a { 
+		text-decoration: none;
+		font-size: 2.5rem;
+		color: #4CB135;
+		font-family: 'Rancho', cursive;
+		font-weight: 600;
+		
+	
+		}
+
+nav ul li a:hover { 
+		background-color: green;
+		color: red ;
+		}
+ 
+/* Estilos de fuentes*/
+ h2 {
+	font-family: 'Bevan', cursive;
+	color: #FAD112;
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 100; 
+	text-align:center;
+	}
+h3 {
+	background-color: #FDE18A;
+	font-family: 'Bevan', cursive;
+	color:#DE6C07;
+	font-size: 2rem;
+	line-height: 4rem;
+	font-weight: 100; 
+	}
+
+ p { 
+ 	font-family: 'Rancho', cursive;
+ 	color:#CE7252;
+ 	font-size: 2.5em;
+ 	line-height: 3rem;
+ }
+ /*main*/
+ main {
+ 	margin-top: 100px;
+ }
+#articulo1{
+	grid-area: articulo;
+
+}
+
+
+.containerArticulo
+{
+background-color:  rgba(163, 104, 96, 0.5);
+}
+.masvendidos__articulo {
+ 	height: auto;
+ 	padding: 50px;
+ 	text-align: center;
+ 	border-radius: 20px;
+ 	
+ 	}
+
+#articulo2{
+	grid-area: articulo2;
+	background-color:  rgba(159, 53, 6, 0.8);
+}
+figure{
+display: flex;
+}
+.figure
+{
+display: flex;
+flex-flow: row wrap;
+}
+
+figcaption{
+	font-family: 'Rancho', cursive;
+ 	color:#CE7252;
+ 	font-size: 2.5em;
+ 	line-height: 3rem;
+ 	display: flex;
+ 	align-items: bottom;
+ 	
+}
+/*inicia aside*/
+aside{
+	grid-area: aside;
+	padding-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(99, 37, 37, 0.8);
+ 	margin-top: 100px;
+
+}
+.aside{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.aside__titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.asideimg{
+	width: 50%;
+	height: auto;
+    justify-content: center;
+    align-items: center;
+	
+}
+.asidep{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: wrap column;
+}
+/*inciia footer*/
+footer{
+	grid-area: footer;
+	padding: 10px 0;
+	text-align: center;
+	grid-area: footer;
+	display: flex;
+	justify-content: center;
+	background-color: #540404 ;
+	margin-top: 100px;
+	border: double orange 15px ;
+	
+}
+
+.footer__icon--md{
+	width: 100%;
+	height:auto;
+
+ }
+.footer__titulo--md{
+	
+	font-size: 4rem;
+	font-family: 'Rancho', cursive;
+	color: #4CB135; 
+}
+/*Inicia media querie*/
+
+
+
+
+@media  (min-width: 480px){
+#grilla2{
+	grid-template-areas: 
+	"header"
+	"articulo3 "
+	"articulo4"
+	"aside"
+	"footer";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	}
+	.logoimg{
+		width: 100%;
+	}
+	
+}
+@media (min-width: 768px){
+#grilla2{
+	grid-template-areas: 
+	"header header"
+	"articulo3 articulo3 "
+	"articulo4 articulo4"
+	"aside aside"
+	"footer footer" ;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat (20vw 80vw);
+	}
+	
+	.logoimg{
+		width: 100%;
+	}
+
+	} 
+@media screen and (min-width: 1024px){
+#grilla2{
+	display: grid;
+	grid-template-areas:
+	 "header header header"
+	 "articulo3 articulo3 aside "
+	 "articulo4 articulo4 aside "
+	 "footer footer footer" ;
+	 grid-template-rows: auto;
+	grid-template-columns: auto auto 25%;
+	column-gap: 25px;}
+	.containerArticulo3{
+		display: flex;
+		flex direction: row wrap;
+		column-gap: 15px;
+		background-color:  rgba(97, 46, 46, 0.9);
+		margin-left: 50px;
+	
+	}
+	.containerArticulo4{
+		display: flex;
+		flex direction: row wrap;
+		column-gap: 15px;
+	
+	}
+	.figure
+{
+display: flex;
+flex-flow: row wrap;
+}
+}
+}
+#articulo3{
+	grid-area: articulo3;
+	background-color:  rgba(97, 46, 46, 0.9);
+	margin-left: 50px;
+	
+}
+#articulo4{
+	grid-area: articulo4;
+	background-color:  rgba(159, 53, 6, 0.8);
+	margin-left: 50px;
+}
+.resena{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+}
+.asidepx{
+
+	font-family: 'Bevan', cursive;
+	color:#DE6C07;
+	font-size: 2rem;
+	line-height: 4rem;
+	font-weight: 100; 
+}
+/*Fin resenas*/
+/*Inicio novedades*/
+
+.novedades{
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    border-radius: 20px;
+    height: auto;
+     background-color:  rgba(255, 130, 86, 1);
+}
+.novedades__mayo{
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-left: 57px;
+    position: relative;
+    width: 45%;
+    border-radius: 20px;
+    height: auto;
+     background-color: rgba(255, 130, 86, 1);
+}
+.novedades__masesperado {
+	font-family: 'Rancho', cursive;
+	color:#5C1C1C;
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 100px; 
+	text-align: center;
+
+	} 
+	.novedades__masesperado--img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+
+	}
+
+	.novedades__masesperado--parrafo
+	{ 
+ 	font-family: 'Rancho', cursive;
+ 	color:white;
+ 	font-size: 2.5em;
+ 	line-height: 3rem;
+ }
+ /*Fin novedades*/
+ /*Inicio catalogo*/
+ .parrafo
+	{
+ 	margin:0  50px;
+ 	width: 80%;
+ 	height: auto;
+ 	padding: 50px;
+ 	text-align: center;
+ 	background-color: rgba(134,12,12,0.8);
+ 	}
+ 	table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius:10px ;
+  background-color: rgba(247, 159, 94, 0.8);
+
+}
+ th
+ {
+ 	font-family: 'Rancho', cursive;
+ 	color:#EEF939;
+ 	font-size: 2.5em;
+ 	line-height: 3rem;
+ }	
+td
+  {
+ 	font-family: 'Rancho', cursive;
+ 	color:#E9F691;
+ 	font-size: 2.5em;
+ 	line-height: 3rem;
+ 	text-align: center;
+ }	
+
+.container {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+ 
+}
+ .container__buscador--x
+ { 
+ 	width:400px;
+ 	height:30px;
+	background-color:#FDD096 ;
+	border-radius: 20px;
+	font-family: 'Rancho', cursive;
+  	font-size: 15pt;
+ }
+ .container__buscador--xx
+ {
+ 	font-family: 'Rancho', cursive;
+ 	background-color: pink;
+ 	font-size: 20px;
+ 	width:100px;
+ 	height:30px;
+ 	border-radius: 20px;
+ }
+ /* Fin de catalogo*/
+ /*Inicio contacto*/
+ form
+{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBC67B;
+border-radius: 20px;
+}
+
+.formulario
+{
+	font-family: 'Rancho', cursive;
+	color:#CB5303;
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 100px; 
+	text-align: center;
+	border-radius: 20px;
+}
+.formulario__info
+ { 
+ 	width:400px;
+ 	height:30px;
+	background-color:#FDD096 ;
+	border-radius: 20px;
+	font-family: 'Rancho', cursive;
+  	font-size: 15pt;
+  	
+ }
+ /*Fin contacto*/
+ /*Inicio media queries contacto y catalogo*/
+@media  (min-width: 480px){
+#grilla3{
+	grid-template-areas: 
+	"header"
+	"articulo5 "
+	"aside"
+	"footer";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	}
+	.logoimg{
+		width: 100%;
+		
+}
+@media (min-width: 768px){
+#grilla3{
+	grid-template-areas: 
+	"header header"
+	"articulo5 articulo5 "
+	"aside aside"
+	"footer footer" ;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat (20vw 80vw);
+	}
+	
+	.logoimg{
+		width: 100%;
+	}
+	} 
+@media screen and (min-width: 1024px){
+#grilla3{
+	display: grid;
+	grid-template-areas:
+	 "header header header"
+	 "articulo5 articulo5 aside "
+	 "footer footer footer" ;
+	 grid-template-rows: auto;
+	grid-template-columns: auto auto 25%;
+	column-gap: 25px;}
+	#Articulo5{
+		display: flex;
+		flex direction: row wrap;
+		column-gap: 15px;
+	
+	}
+#articulo5{
+	grid-area: articulo5;
+}
+
+

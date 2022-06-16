@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='shortcut icon' href="img/favcon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Oráculo de libros</title>
+</head>
+<body>
+	
+	<div id ="grilla3">
+		<header id="mainHeader"> 
+		<nav>
+			<a href= "index.html">
+				<img src  ="img/logo.webp" alt= "Logo de Oraculo de libros" class="logoimg"> 
+			</a>
+		
+     
+			<ul>
+				<li> 
+					<a href="index.html"> Inicio </a>
+				</li>	
+				<li> 
+					<a href= resenas.html> Reseñas </a>
+				</li>
+				<li> 
+					<a href= "catalogo.html"> Catálogo de libros </a>
+				</li>
+				<li> 
+					<a href="novedades.html"> Novedades </a>
+				</li>
+				<li> 
+					<a href="contacto.html"> Contacto </a>
+				</li>
+				
+			</ul>
+		</nav>
+		</header>
+	<main>
+	<section class="articulo5">
+<form action= "envio.php" method= "post"> 
+	<fieldset> 
+		<legend class="formulario">Info de contacto </legend>
+		<label for="nombre" class="formulario__info"> Nombre </label>
+		<br>
+		<input type= "text" name= "nombre" id= "nombre" placeholder= "Marta">
+		<br>
+		<label for= "email"class="formulario__info"> Email </label> 
+		<br>
+		<input type="email" name="email" id="email" placeholder="email@algo.com">
+		</fieldset>
+		<fieldset>
+			<legend class="formulario"> Info de venta</legend>
+
+			<label for="libros" class="formulario__info"> Libros </label>
+			
+			<input type="checkbox" value="libros" id="libros">
+			<br>
+
+			<label for="agendas" class="formulario__info"> Agendas </label>
+			
+			<input type="checkbox" value="agendas" id="agendas">
+		</fieldset>
+		<fieldset>
+			<legend class="formulario" > Entrega </legend>
+			<label for= "domicilio" class="formulario__info"> Entrega a domicilio </label>
+			<input type="radio" id="domicilio" value="domicilio" name="Entrega a domicilio">
+			<br>
+			<label for= "correo" class="formulario__info"> Retiro en el correo </label>
+			<input type="radio" id="correo" value="correo" name="Retiro en el correo">
+
+		</fieldset>
+		<fieldset>
+			<label for="localidad" class="formulario__info"> Localidad </label>
+			<select name="localidad" id="localidad">
+				<option value="buenosaires"> Buenos Aires </option>
+				<option value="caba"> Ciudad Autónoma de Buenos Aires </option>
+				<option value="interior"> Interior del país </option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<label for="mensaje" class="formulario__info"> Mensaje </label>
+			<br>
+			<textarea cols="30" rows="10"></textarea>
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Cancelar">
+		</fieldset>
+	</form>
+</section>
+</main>
+<aside>
+			<div class ="aside" >
+				<h2 class="aside__titulo" > Sobre nosotras </h2> 
+				<img src="img/aside.webp" alt= "Sobre nosotras" class="asideimg">
+				<p class="asidep" > Somos dos hermanas que en 2021, luego de casi un año de pandemia, frente a la necesidad de ayudar a nuestros padres economicamente,de a poco y con mucho esfuerzo creamos Oráculo de libros.  Creemos que leer enriquece el alma, y por eso buscamos traerte los mejores libros al menor precio posible. Y si no sabes que leer, ¡no te preocupes! tenemos una seccion de reseñas donde vas a poder ver nuestras opiniones sobre los libros que vendemos. <br> Gracias por confiar en nosotras y no te olvides:<b> ¡Algo muy mágico puede suceder cuando se lee un buen libro! </b></p>
+ 		</div>
+			</aside>
+<footer class="footer">
+		<h4 class="footer__titulo--md"> Seguinos en nuestras redes</h4>
+		<a href=" https://facebook.com" target="_blank"> <img src=" img/facebook.png" alt= "seguinos en facebook" class="footer__icon--md"> </a>
+			<a href=" https://instagram.com" target="_blank"> <img src=" img/instagram.png" alt= "seguinos en instagram" class="footer__icon--md"></a>
+				<a href=" https://twitter.com" target="_blank"> <img src="img/twitter.png" alt= "seguinos en twitter" class="footer__icon--md"> </a>
+	</footer>
+	</body>
+</html>
